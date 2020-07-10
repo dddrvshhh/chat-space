@@ -1,7 +1,7 @@
 ##groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|"name"|string|null: false, add index unique: true|
+|name|string|null: false, add index unique: true|
 
 
 ### Association
@@ -17,7 +17,7 @@
 |name|strig|null: false, add index unique: true|
 |email|strng|null: false, add index unique: true|
 |password|string|null: false|
-|password|string|null: false|
+
 
 
 ### Association
