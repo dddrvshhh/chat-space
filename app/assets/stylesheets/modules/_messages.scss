@@ -19,24 +19,97 @@
 
 
 .side_bar {
+  color: #ffffff;
+  font-weight: bold;
   border: solid 1px black;
   height: 100vh;
   width: 300px;
-  
 
-  &__user-name {
-    border: solid 1px blue;
+  &__top {
+    border: solid 1px red;
     height: 100px;
+    padding: 0 20px 0 20px;
     background-color: #253141;
+    display: flex;
+    align-items: center;
+
+    &__box {
+      height: 20px;
+      width: 260px;
+      border: solid 1px blue;
+      display: flex;
+      justify-content: space-between;
+      
+
+      &__username {
+        border: solid 1px red;
+        font-size: 16px;
+      }
+
+      &__iconlist {
+        width: 60px;
+        border: solid 1px red;
+        display: flex;
+      
+        &__1 {
+
+        }
+
+        &__2 {
+          margin-left: 5px;
+        }
+      }
+    }
   }
 
-  &__group-list {
+
+
+  &__main {
     border: solid 1px blue;
     height: calc(100vh - 100px);
     background-color: #2f3e51;
-  }
+    padding: 0 20px 0 20px;
+  
 
+    &__group {
+      border: solid 4px black;
+      padding: 20px 0 40px 0;
+     
+      
+
+      &__name{
+        border: solid 1px red;
+        font-size: 15px;
+      }
+
+      &__message {
+        border: solid 1px red;
+        font-size: 11px;
+        margin-top: 5px;
+      }
+
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -54,6 +127,7 @@
     border: solid 1px green;
     height: 100px;
     background-color: #ffffff;
+
   }
 
   &__message-list {
