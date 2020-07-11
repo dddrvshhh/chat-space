@@ -36,9 +36,11 @@
     &__box {
       height: 20px;
       width: 260px;
-      border: solid 1px blue;
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      background-color: #d8d8d8;
+      // border: solid 1px blue;
       
 
       &__username {
