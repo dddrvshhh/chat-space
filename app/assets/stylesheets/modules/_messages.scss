@@ -59,11 +59,13 @@
   &__message-list {
     border: solid 1px gold;
     height: calc(100vh - 100px - 90px);
+    background-color: #fafafa;
   }
 
   &__message-form {
     border: solid 1px lightgreen;
     height: 90px;
+    background-color: #d2d2d2;
   }
 
 
