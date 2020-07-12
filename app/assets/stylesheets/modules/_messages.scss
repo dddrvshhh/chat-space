@@ -3,8 +3,16 @@
 }
 
 
+@mixin border($hutosa: 2px, $seniro: #fff) {
+  border: solid $hutosa $seniro;
+}
+
+$yokonarabi: flex;
+
+
+
 .wrapper {
-  border: solid 1px blueviolet;
+  // border: solid 1px blueviolet;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -21,36 +29,37 @@
 .side_bar {
   color: #ffffff;
   font-weight: bold;
-  border: solid 1px black;
   height: 100vh;
   width: 300px;
+  // border: solid 1px black;
+  @include border(3px,red);
 
-  &__top {
-    border: solid 1px red;
+  &__top3 {
+    // border: solid 1px red;
     height: 100px;
     padding: 0 20px 0 20px;
     background-color: #253141;
     display: flex;
     align-items: center;
 
-    &__box {
+    &__box4 {
       height: 20px;
       width: 260px;
-      display: flex;
+      display: $yokonarabi;
       justify-content: space-between;
       align-items: center;
       // background-color: #d8d8d8;
       // border: solid 1px blue;
       
 
-      &__username {
-        border: solid 1px red;
+      &__username5 {
+        // border: solid 1px red;
         font-size: 16px;
       }
 
-      &__iconlist {
+      &__iconlist5 {
         width: 60px;
-        border: solid 1px red;
+        // border: solid 1px red;
         display: flex;
         justify-content: flex-end;
         
@@ -59,7 +68,7 @@
           
           &__edit {
 
-            &--icon {
+            &--icon6 {
               color: #ffffff;
             }
           }
@@ -70,7 +79,7 @@
 
           &__cog {
 
-            &--icon {
+            &--icon6 {
               color: #ffffff;
             }
           }
@@ -81,26 +90,26 @@
 
 
 
-  &__main {
-    border: solid 1px blue;
+  &__main3 {
+    // border: solid 1px blue;
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 0 20px 0 20px;
   
 
-    &__group {
-      border: solid 4px black;
+    &__group4 {
+      // border: solid 4px black;
       padding: 20px 0 40px 0;
      
       
 
-      &__name{
-        border: solid 1px red;
+      &__name5 {
+        // border: solid 1px red;
         font-size: 15px;
       }
 
-      &__message {
-        border: solid 1px red;
+      &__message5 {
+        // border: solid 1px red;
         font-size: 11px;
         margin-top: 5px;
       }
@@ -112,35 +121,14 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .chat_main {
-  border: solid 1px red;
+  // border: solid 1px red;
   height: 100vh;
   width: calc(100vw - 300px);
   
   
   &__group-info {
-    border: solid 1px green;
+    // border: solid 1px green;
     height: 100px;
     padding: 0 40px;
     background-color: #ffffff;
@@ -149,13 +137,13 @@
     // align-items: center;
 
     &__leftbox {
-      border: solid 1px blue;
+      // border: solid 1px blue;
 
-      &__groupname {
+      &__grouplist {
         margin-top: 35px;
         color: #333333;
         font-size: 20px;
-        border: solid 1px blue;
+        // border: solid 1px blue;
         
       }
 
@@ -165,7 +153,7 @@
         margin-top: 15px;
         color: #999999;
         font-size: 12px;
-        border: solid 1px blue;
+        // border: solid 1px blue;
 
         &__name {
           margin-right: 5px;
@@ -181,7 +169,7 @@
       margin-top: 28px;
       padding: 0 20px;
       line-height: 40px;
-      border: solid 1px blue;
+      border: solid 1px #38aef0;
 
       &__edit {
         text-decoration: none;
@@ -196,36 +184,33 @@
 
 
 
-
-
-
   &__message-list {
-    border: solid 1px gold;
+    // border: solid 1px gold;
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
     padding: 35px 40px 0 40px;
 
     &__messagebox {
-      border: solid 1px blue;
+      // border: solid 1px blue;
       margin-bottom: 46px;
 
-      &__info {
+      &__info-ss {
         display: flex;
         justify-content: start;
 
-        &__name {
+        &__name-ww {
           color: #333333;
           font-size: 16px;
         }
 
-        &__date {
+        &__date-ww {
           color: #999999;
           font-size: 12px;
           padding-left: 10px;
         }
       }
 
-      &__message {
+      &__message-ss {
         margin-top: 12px;
 
         &__content {
@@ -239,24 +224,64 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  &__message-form {
-    border: solid 1px lightgreen;
+  &__message-form3 {
+    // border: solid 1px lightgreen;
     height: 90px;
     background-color: #d2d2d2;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px 20px 40px;
+
+    &__longbox4 {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      // border: solid 1px red;
+
+      &__formcontent5 {
+        width: 100%;
+        
+        // padding: 0 10px;
+        display: flex;
+        position: relative;
+        // border: solid 1px black;
+
+        &__inputfield6 {
+          border: 0px none;
+          padding: 0 45px 0 10px;
+          width: 100%;
+        }
+
+        &__imagefield6 {
+          position: absolute;
+          right: 10px;
+          top: 12px;
+          // border: solid 1px black;
+
+          &__icon7 {
+            // background-color: black;
+            // color: white;
+            // @include border(red);
+            // width: 100%;
+            font-size: 25px
+          }
+
+          &__file7 {
+            display: none;
+          }
+        }
+      }
+
+      &__sendtcontent5 {
+        margin-left: 15px;
+        padding: 0 30px;
+        background-color: #38aef0;
+        color: #fff;
+        font-size: 16px;
+        border: 0px none;
+
+      }
+    }
   }
-
-
 }

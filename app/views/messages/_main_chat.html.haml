@@ -4,10 +4,10 @@
     %div.chat_main__group-info__leftbox
       
 
-      %div.chat_main__group-info__leftbox__groupname
+      %div.chat_main__group-info__leftbox__grouplist
         ddd
       %ul.chat_main__group-info__leftbox__memberlist
-        Menber : 
+        Member : 
 
         %li.chat_main__group-info__leftbox__memberlist__name
           di
@@ -24,53 +24,78 @@
 
   %div.chat_main__message-list
 
-    %div.chat_main__message-list__messagebox
-
-      %div.chat_main__message-list__messagebox__info
-
-        %div.chat_main__message-list__messagebox__info__name
-          di
-        %div.chat_main__message-list__messagebox__info__date
-          2020
-
-      %div.chat_main__message-list__messagebox__message
-
-        %p.chat_main__message-list__messagebox__message__content
-          こんにちは
-
 
     %div.chat_main__message-list__messagebox
 
-      %div.chat_main__message-list__messagebox__info
+      %div.chat_main__message-list__messagebox__info-ss
 
-        %div.chat_main__message-list__messagebox__info__name
+        %div.chat_main__message-list__messagebox__info-ss__name-ww
           di
-        %div.chat_main__message-list__messagebox__info__date
+        %div.chat_main__message-list__messagebox__info-ss__date-ww
           2020
 
-      %div.chat_main__message-list__messagebox__message
+      %div.chat_main__message-list__messagebox__message-ss
 
-        %p.chat_main__message-list__messagebox__message__content
-          こんにちは
-
-
-    %div.chat_main__message-list__messagebox
-
-      %div.chat_main__message-list__messagebox__info
-
-        %div.chat_main__message-list__messagebox__info__name
-          di
-        %div.chat_main__message-list__messagebox__info__date
-          2020
-
-      %div.chat_main__message-list__messagebox__message
-
-        %p.chat_main__message-list__messagebox__message__content
+        %p.chat_main__message-list__messagebox__message-ss__content
           こんにちは
 
 
 
 
+    %div.chat_main__message-list__messagebox
 
-  %div.chat_main__message-form 
-    ya-ya
+      %div.chat_main__message-list__messagebox__info-ss
+
+        %div.chat_main__message-list__messagebox__info-ss__name-ww
+          di
+        %div.chat_main__message-list__messagebox__info-ss__date-ww
+          2020
+
+      %div.chat_main__message-list__messagebox__message-ss
+
+        %p.chat_main__message-list__messagebox__message-ss__content
+          こんにちは
+
+          
+
+
+    %div.chat_main__message-list__messagebox
+
+      %div.chat_main__message-list__messagebox__info-ss
+
+        %div.chat_main__message-list__messagebox__info-ss__name-ww
+          di
+        %div.chat_main__message-list__messagebox__info-ss__date-ww
+          2020
+
+      %div.chat_main__message-list__messagebox__message-ss
+
+        %p.chat_main__message-list__messagebox__message-ss__content
+          こんにちは
+
+
+
+
+
+
+
+
+
+
+
+  %div.chat_main__message-form3 
+
+    %div.chat_main__message-form3__longbox4
+
+      %div.chat_main__message-form3__longbox4__formcontent5
+
+        %input.chat_main__message-form3__longbox4__formcontent5__inputfield6{placeholder: 'type a message'}
+
+        %label.chat_main__message-form3__longbox4__formcontent5__imagefield6
+          = icon('far', 'image', class:'chat_main__message-form3__longbox4__formcontent5__imagefield6__icon7')
+          %input.chat_main__message-form3__longbox4__formcontent5__imagefield6__file7{type: "file"}
+        
+        
+          
+
+      %input.chat_main__message-form3__longbox4__sendtcontent5{type: 'submit',value: 'Send',name:'send'}
