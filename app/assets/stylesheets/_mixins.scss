@@ -1,0 +1,3 @@
+@mixin border($hutosa: 2px, $seniro: #fff) {
+  border: solid $hutosa $seniro;
+}
