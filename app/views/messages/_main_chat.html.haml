@@ -1,10 +1,9 @@
 .chat_main
-  -# ＜チャット画面＞
-  %div.chat_main__group-info 
-    %div.chat_main__group-info__leftbox
+  .chat_main__group-info 
+    .chat_main__group-info__leftbox
       
 
-      %div.chat_main__group-info__leftbox__grouplist
+      .chat_main__group-info__leftbox__grouplist
         ddd
       %ul.chat_main__group-info__leftbox__memberlist
         Member : 
@@ -12,8 +11,8 @@
         %li.chat_main__group-info__leftbox__memberlist__name
           di
 
-    %div.chat_main__group-info__rightbox
-      %a.chat_main__group-info__rightbox__edit{href: '#'} 
+    .chat_main__group-info__rightbox
+      = link_to "#", class: "chat_main__group-info__rightbox__edit" do
         Edit 
       
 
@@ -22,19 +21,19 @@
 
 
 
-  %div.chat_main__message-list
+  .chat_main__message-list
 
 
-    %div.chat_main__message-list__messagebox
+    .chat_main__message-list__messagebox
 
-      %div.chat_main__message-list__messagebox__info-ss
+      .chat_main__message-list__messagebox__info-ss
 
-        %div.chat_main__message-list__messagebox__info-ss__name-ww
+        .chat_main__message-list__messagebox__info-ss__name-ww
           di
-        %div.chat_main__message-list__messagebox__info-ss__date-ww
+        .chat_main__message-list__messagebox__info-ss__date-ww
           2020
 
-      %div.chat_main__message-list__messagebox__message-ss
+      .chat_main__message-list__messagebox__message-ss
 
         %p.chat_main__message-list__messagebox__message-ss__content
           こんにちは
@@ -42,16 +41,16 @@
 
 
 
-    %div.chat_main__message-list__messagebox
+    .chat_main__message-list__messagebox
 
-      %div.chat_main__message-list__messagebox__info-ss
+      .chat_main__message-list__messagebox__info-ss
 
-        %div.chat_main__message-list__messagebox__info-ss__name-ww
+        .chat_main__message-list__messagebox__info-ss__name-ww
           di
-        %div.chat_main__message-list__messagebox__info-ss__date-ww
+        .chat_main__message-list__messagebox__info-ss__date-ww
           2020
 
-      %div.chat_main__message-list__messagebox__message-ss
+      .chat_main__message-list__messagebox__message-ss
 
         %p.chat_main__message-list__messagebox__message-ss__content
           こんにちは
@@ -59,16 +58,16 @@
           
 
 
-    %div.chat_main__message-list__messagebox
+    .chat_main__message-list__messagebox
 
-      %div.chat_main__message-list__messagebox__info-ss
+      .chat_main__message-list__messagebox__info-ss
 
-        %div.chat_main__message-list__messagebox__info-ss__name-ww
+        .chat_main__message-list__messagebox__info-ss__name-ww
           di
-        %div.chat_main__message-list__messagebox__info-ss__date-ww
+        .chat_main__message-list__messagebox__info-ss__date-ww
           2020
 
-      %div.chat_main__message-list__messagebox__message-ss
+      .chat_main__message-list__messagebox__message-ss
 
         %p.chat_main__message-list__messagebox__message-ss__content
           こんにちは
@@ -83,11 +82,11 @@
 
 
 
-  %div.chat_main__message-form3 
+  .chat_main__message-form3 
 
-    %div.chat_main__message-form3__longbox4
+    .chat_main__message-form3__longbox4
 
-      %div.chat_main__message-form3__longbox4__formcontent5
+      .chat_main__message-form3__longbox4__formcontent5
 
         %input.chat_main__message-form3__longbox4__formcontent5__inputfield6{placeholder: 'type a message'}
 

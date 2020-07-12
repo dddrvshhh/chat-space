@@ -1,9 +1,7 @@
 .side_bar
-  -# ＜サイドバー＞
 
-  %div.side_bar__top3 
-    -# hoge
-    %div.side_bar__top3__box4
+  .side_bar__top3 
+    .side_bar__top3__box4
 
       %h3.side_bar__top3__box4__username5
         dadadad
@@ -15,31 +13,30 @@
 
 
         %li.side_bar__top3__box4__iconlist5__2
-          %a.side_bar__top3__box4__iconlist5__2__cog{href:'#'}
+          = link_to "#", class: "side_bar__top3__box4__iconlist5__2__cog" do
             =icon('fas', 'cog', class:'side_bar__top3__box4__iconlist5__2__cog--icon6')
 
 
 
-  %div.side_bar__main3
-    -# teck
-    %div.side_bar__main3__group4
-      %div.side_bar__main3__group4__name5
+  .side_bar__main3
+    .side_bar__main3__group4
+      .side_bar__main3__group4__name5
         teckcamp
-      %div.side_bar__main3__group4__message5
+      .side_bar__main3__group4__message5
         メッセージはありません
 
 
-    %div.side_bar__main3__group4
-      %div.side_bar__main3__group4__name5
+    .side_bar__main3__group4
+      .side_bar__main3__group4__name5
         teckcamp
-      %div.side_bar__main3__group4__message5
+      .side_bar__main3__group4__message5
         メッセージはありません
 
 
-    %div.side_bar__main3__group4
-      %div.side_bar__main3__group4__name5
+    .side_bar__main3__group4
+      .side_bar__main3__group4__name5
         teckcamp
-      %div.side_bar__main3__group4__message5
+      .side_bar__main3__group4__message5
         メッセージはありません
 
 

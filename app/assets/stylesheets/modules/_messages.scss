@@ -3,16 +3,13 @@
 }
 
 
-@mixin border($hutosa: 2px, $seniro: #fff) {
-  border: solid $hutosa $seniro;
-}
+
 
 $yokonarabi: flex;
 
 
 
 .wrapper {
-  // border: solid 1px blueviolet;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -31,11 +28,9 @@ $yokonarabi: flex;
   font-weight: bold;
   height: 100vh;
   width: 300px;
-  // border: solid 1px black;
-  // @include border(3px,red);
+
 
   &__top3 {
-    // border: solid 1px red;
     height: 100px;
     padding: 0 20px 0 20px;
     background-color: #253141;
@@ -48,18 +43,15 @@ $yokonarabi: flex;
       display: $yokonarabi;
       justify-content: space-between;
       align-items: center;
-      // background-color: #d8d8d8;
-      // border: solid 1px blue;
+
       
 
       &__username5 {
-        // border: solid 1px red;
         font-size: 16px;
       }
 
       &__iconlist5 {
         width: 60px;
-        // border: solid 1px red;
         display: flex;
         justify-content: flex-end;
         
@@ -91,25 +83,21 @@ $yokonarabi: flex;
 
 
   &__main3 {
-    // border: solid 1px blue;
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 0 20px 0 20px;
   
 
     &__group4 {
-      // border: solid 4px black;
       padding: 20px 0 40px 0;
      
       
 
       &__name5 {
-        // border: solid 1px red;
         font-size: 15px;
       }
 
       &__message5 {
-        // border: solid 1px red;
         font-size: 11px;
         margin-top: 5px;
       }
@@ -122,29 +110,23 @@ $yokonarabi: flex;
 
 
 .chat_main {
-  // border: solid 1px red;
   height: 100vh;
   width: calc(100vw - 300px);
   
   
   &__group-info {
-    // border: solid 1px green;
     height: 100px;
     padding: 0 40px;
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
-    // align-items: center;
 
     &__leftbox {
-      // border: solid 1px blue;
 
       &__grouplist {
         margin-top: 35px;
         color: #333333;
         font-size: 20px;
-        // border: solid 1px blue;
-        
       }
 
       &__memberlist {
@@ -153,7 +135,6 @@ $yokonarabi: flex;
         margin-top: 15px;
         color: #999999;
         font-size: 12px;
-        // border: solid 1px blue;
 
         &__name {
           margin-right: 5px;
@@ -185,13 +166,11 @@ $yokonarabi: flex;
 
 
   &__message-list {
-    // border: solid 1px gold;
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
     padding: 35px 40px 0 40px;
 
     &__messagebox {
-      // border: solid 1px blue;
       margin-bottom: 46px;
 
       &__info-ss {
@@ -225,7 +204,6 @@ $yokonarabi: flex;
 
 
   &__message-form3 {
-    // border: solid 1px lightgreen;
     height: 90px;
     background-color: #d2d2d2;
     display: flex;
@@ -237,15 +215,11 @@ $yokonarabi: flex;
       height: 50px;
       display: flex;
       justify-content: space-between;
-      // border: solid 1px red;
 
       &__formcontent5 {
         width: 100%;
-        
-        // padding: 0 10px;
         display: flex;
         position: relative;
-        // border: solid 1px black;
 
         &__inputfield6 {
           border: 0px none;
@@ -257,13 +231,8 @@ $yokonarabi: flex;
           position: absolute;
           right: 10px;
           top: 12px;
-          // border: solid 1px black;
 
           &__icon7 {
-            // background-color: black;
-            // color: white;
-            // @include border(red);
-            // width: 100%;
             font-size: 25px
           }
 
