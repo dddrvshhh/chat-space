@@ -137,13 +137,12 @@
   border: solid 1px red;
   height: 100vh;
   width: calc(100vw - 300px);
-  padding: 0 40px;
   
   
-
   &__group-info {
     border: solid 1px green;
     height: 100px;
+    padding: 0 40px;
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
@@ -190,9 +189,11 @@
         font-size: 16px;
       }
     }
-
-
   }
+
+
+
+
 
 
 
@@ -202,7 +203,54 @@
     border: solid 1px gold;
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
+    padding: 35px 40px 0 40px;
+
+    &__messagebox {
+      border: solid 1px blue;
+      margin-bottom: 46px;
+
+      &__info {
+        display: flex;
+        justify-content: start;
+
+        &__name {
+          color: #333333;
+          font-size: 16px;
+        }
+
+        &__date {
+          color: #999999;
+          font-size: 12px;
+          padding-left: 10px;
+        }
+      }
+
+      &__message {
+        margin-top: 12px;
+
+        &__content {
+          color: #434A54;
+          font-size: 14px;
+        }
+      }
+    }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   &__message-form {
     border: solid 1px lightgreen;
