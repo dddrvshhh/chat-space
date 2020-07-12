@@ -137,6 +137,7 @@
   border: solid 1px red;
   height: 100vh;
   width: calc(100vw - 300px);
+  padding: 0 40px;
   
   
 
@@ -144,8 +145,58 @@
     border: solid 1px green;
     height: 100px;
     background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+
+    &__leftbox {
+      border: solid 1px blue;
+
+      &__groupname {
+        margin-top: 35px;
+        color: #333333;
+        font-size: 20px;
+        border: solid 1px blue;
+        
+      }
+
+      &__memberlist {
+        display: flex;
+        list-style: none;
+        margin-top: 15px;
+        color: #999999;
+        font-size: 12px;
+        border: solid 1px blue;
+
+        &__name {
+          margin-right: 5px;
+          margin-left: 5px;
+        }
+      }
+    }
+
+
+    &__rightbox {
+      height: 40px;
+      width: 72px;
+      margin-top: 28px;
+      padding: 0 20px;
+      line-height: 40px;
+      border: solid 1px blue;
+
+      &__edit {
+        text-decoration: none;
+        color: #38aef0;
+        font-size: 16px;
+      }
+    }
+
 
   }
+
+
+
+
 
   &__message-list {
     border: solid 1px gold;
