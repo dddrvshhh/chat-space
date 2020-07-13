@@ -4,7 +4,7 @@
     .side_bar__top3__box4
 
       %h3.side_bar__top3__box4__username5
-        dadadad
+        = current_user.name
       %ul.side_bar__top3__box4__iconlist5
 
         %li.side_bar__top3__box4__iconlist5__1
@@ -13,7 +13,7 @@
 
 
         %li.side_bar__top3__box4__iconlist5__2
-          = link_to "#", class: "side_bar__top3__box4__iconlist5__2__cog" do
+          = link_to edit_user_path(current_user), class: "side_bar__top3__box4__iconlist5__2__cog" do
             =icon('fas', 'cog', class:'side_bar__top3__box4__iconlist5__2__cog--icon6')
 
 
