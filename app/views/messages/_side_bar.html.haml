@@ -18,25 +18,17 @@
 
 
 
+
   .side_bar__main3
-    .side_bar__main3__group4
-      .side_bar__main3__group4__name5
-        teckcamp
-      .side_bar__main3__group4__message5
-        メッセージはありません
+    - current_user.groups.each do |group|
+      .side_bar__main3__group4
+        = link_to '#' do
+          .side_bar__main3__group4__name5
+            group.name
+          .side_bar__main3__group4__message5
+            メッセージはまだありません
 
 
-    .side_bar__main3__group4
-      .side_bar__main3__group4__name5
-        teckcamp
-      .side_bar__main3__group4__message5
-        メッセージはありません
 
-
-    .side_bar__main3__group4
-      .side_bar__main3__group4__name5
-        teckcamp
-      .side_bar__main3__group4__message5
-        メッセージはありません
 
 
