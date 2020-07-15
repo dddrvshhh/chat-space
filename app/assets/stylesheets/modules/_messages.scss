@@ -24,13 +24,14 @@ $yokonarabi: flex;
 
 
 .side_bar {
-  color: #ffffff;
+  
   font-weight: bold;
   height: 100vh;
   width: 300px;
 
 
   &__top3 {
+    color: #ffffff;
     height: 100px;
     padding: 0 20px 0 20px;
     background-color: #253141;
@@ -86,18 +87,22 @@ $yokonarabi: flex;
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 0 20px 0 20px;
+    a { text-decoration: none;}
   
 
     &__group4 {
       padding: 20px 0 40px 0;
-     
+      
+      
       
 
       &__name5 {
+        color: #ffffff;
         font-size: 15px;
       }
 
       &__message5 {
+        color: #ffffff;
         font-size: 11px;
         margin-top: 5px;
       }
@@ -105,6 +110,11 @@ $yokonarabi: flex;
     }
   }
 }
+
+
+
+
+
 
 
 

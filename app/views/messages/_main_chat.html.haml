@@ -1,100 +1,39 @@
 .chat_main
   .chat_main__group-info 
     .chat_main__group-info__leftbox
-      
 
       .chat_main__group-info__leftbox__grouplist
-        ddd
+        = @group.name
       %ul.chat_main__group-info__leftbox__memberlist
-        Member : 
+        Member:
 
         %li.chat_main__group-info__leftbox__memberlist__name
-          di
+          - @group.users.each do |a|
+            = a.name
 
     .chat_main__group-info__rightbox
-      = link_to "#", class: "chat_main__group-info__rightbox__edit" do
+      = link_to edit_group_path(@group.id), class: "chat_main__group-info__rightbox__edit" do
         Edit 
       
 
 
 
 
-
-
   .chat_main__message-list
-
-
-    .chat_main__message-list__messagebox
-
-      .chat_main__message-list__messagebox__info-ss
-
-        .chat_main__message-list__messagebox__info-ss__name-ww
-          di
-        .chat_main__message-list__messagebox__info-ss__date-ww
-          2020
-
-      .chat_main__message-list__messagebox__message-ss
-
-        %p.chat_main__message-list__messagebox__message-ss__content
-          こんにちは
-
-
-
-
-    .chat_main__message-list__messagebox
-
-      .chat_main__message-list__messagebox__info-ss
-
-        .chat_main__message-list__messagebox__info-ss__name-ww
-          di
-        .chat_main__message-list__messagebox__info-ss__date-ww
-          2020
-
-      .chat_main__message-list__messagebox__message-ss
-
-        %p.chat_main__message-list__messagebox__message-ss__content
-          こんにちは
-
-          
-
-
-    .chat_main__message-list__messagebox
-
-      .chat_main__message-list__messagebox__info-ss
-
-        .chat_main__message-list__messagebox__info-ss__name-ww
-          di
-        .chat_main__message-list__messagebox__info-ss__date-ww
-          2020
-
-      .chat_main__message-list__messagebox__message-ss
-
-        %p.chat_main__message-list__messagebox__message-ss__content
-          こんにちは
-
-
-
-
-
-
+    = render @messages
 
 
 
 
 
   .chat_main__message-form3 
-
-    .chat_main__message-form3__longbox4
-
+    = form_with model: [@group, @message], html: {class: "chat_main__message-form3__longbox4"}, local: true do |f|
+    
       .chat_main__message-form3__longbox4__formcontent5
+        = f.text_field :content, class: 'chat_main__message-form3__longbox4__formcontent5__inputfield6', placeholder: 'type a message'
+        = f.label :image, class: 'chat_main__message-form3__longbox4__formcontent5__imagefield6' do
+          = icon('far', 'image', class: 'chat_main__message-form3__longbox4__formcontent5__imagefield6__icon7')
+          = f.file_field :image, class: 'chat_main__message-form3__longbox4__formcontent5__imagefield6__file7'
 
-        %input.chat_main__message-form3__longbox4__formcontent5__inputfield6{placeholder: 'type a message'}
+      = f.submit 'Send', class: 'chat_main__message-form3__longbox4__sendtcontent5'
 
-        %label.chat_main__message-form3__longbox4__formcontent5__imagefield6
-          = icon('far', 'image', class:'chat_main__message-form3__longbox4__formcontent5__imagefield6__icon7')
-          %input.chat_main__message-form3__longbox4__formcontent5__imagefield6__file7{type: "file"}
-        
-        
-          
-
-      %input.chat_main__message-form3__longbox4__sendtcontent5{type: 'submit',value: 'Send',name:'send'}
