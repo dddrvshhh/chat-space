@@ -4,13 +4,13 @@ class GroupsController < ApplicationController
   end
 
   def new
-    @group = Group.new   #モデルメソッド.new インスタンス(データ、レコード)を生成
-    @group.users << current_user   #配列(データテーブル).users?に要素(current_user)を加えます
+    @group = Group.new
+    @group.users << current_user 
   end
 
   def create
     @group = Group.new(group_params)
-    if @group.save        #モデルメソッド.save インスタンス(データ、レコード)を保存
+    if @group.save 
       redirect_to root_path, notice: 'グループを作成しました'
     else
       render :new
@@ -18,20 +18,20 @@ class GroupsController < ApplicationController
   end
 
   def edit 
-    @group = Group.find(params[:id])       #モデルメソッド.find(テーブルid)
+    @group = Group.find(params[:id]) 
   end
 
   def update
-    @group = Group.find(params[:id])     #モデルメソッド.find(テーブルid)
+    @group = Group.find(params[:id])
     if @group.update(group_params)
-      redirect_to root_path, notice: 'グループを更新しました'
+      redirect_to group_messages_path(@group.id), notice: 'グループを更新しました'
     else
       render :edit
     end
   end
 
 
-  private      #新たに定義するコントローラーアクション
+  private 
   def group_params
     params.require(:group).permit(:name, user_ids: [])
   end
