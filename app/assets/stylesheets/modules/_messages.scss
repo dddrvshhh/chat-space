@@ -24,7 +24,6 @@ $yokonarabi: flex;
 
 
 .side_bar {
-  
   font-weight: bold;
   height: 100vh;
   width: 300px;
@@ -88,6 +87,7 @@ $yokonarabi: flex;
     background-color: #2f3e51;
     padding: 0 20px 0 20px;
     a { text-decoration: none;}
+    overflow: scroll;
   
 
     &__group4 {
@@ -179,6 +179,7 @@ $yokonarabi: flex;
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
     padding: 35px 40px 0 40px;
+    overflow: scroll;
 
     &__messagebox {
       margin-bottom: 46px;
