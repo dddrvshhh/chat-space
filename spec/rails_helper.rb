@@ -64,4 +64,9 @@ RSpec.configure do |config|
 
   #factory_botによってインスタンスを作成する際に、レシーバーであるクラスのFactoryBotという記述を省略することができます。
   config.include FactoryBot::Syntax::Methods
+
+  #deviseのコントローラのテスト用のモジュールと、先ほど定義したControllerMacrosを読み込む記述を行います。
+  Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+  config.include Devise::Test::ControllerHelpers, type: :controller
+  config.include ControllerMacros, type: :controller
 end
