@@ -47,7 +47,6 @@ $(function(){
 
   $('.chat_main__message-form3__longbox4').on('submit', function(e){
     e.preventDefault();
-    console.log("hoge")
     let formData = new FormData(this);
     let url = $(this).attr('action')
     $.ajax({
