@@ -1,7 +1,10 @@
 $(function(){
+
   function buildHTML(message){
+    // 「もしメッセージに画像が含まれていたら」という条件式
     if ( message.image ) {
       let html =
+      //メッセージに画像が含まれる場合のHTMLを作る
         `<div class="chat_main__message-list__messagebox" data-message-id=${message.id}>
           <div class="chat_main__message-list__messagebox__info-ss">
             <div class="chat_main__message-list__messagebox__info-ss__name-ww">
@@ -19,9 +22,11 @@ $(function(){
           </div>
         </div>`
       return html;
+
     } else {
       let html =
-      `<div class="class="chat_main__message-list__messagebox" data-message-id=${message.id}>
+      //メッセージに画像が含まれない場合のHTMLを作る
+      `<div class="chat_main__message-list__messagebox" data-message-id=${message.id}>
         <div class="chat_main__message-list__messagebox__info-ss">
           <div class="chat_main__message-list__messagebox__info-ss__name-ww">
             ${message.user_name}
@@ -42,7 +47,7 @@ $(function(){
 
   let reloadMessages = function() {
     //カスタムデータ属性を利用し、ブラウザに表示されている最新メッセージのidを取得
-    let last_message_id = $('.MessageBox:last').data("message-id") || 0;
+    let last_message_id = $('.chat_main__message-list__messagebox:last').data("message-id") || 0;
     $.ajax({
       //ルーティングで設定した通り/groups/id番号/api/messagesとなるよう文字列を書く
       url: "api/messages",
@@ -53,6 +58,7 @@ $(function(){
       data: {id: last_message_id}
     })
     .done(function(messages) {
+      console.log(messages)
       // 更新するメッセージがなかった場合は.doneの後の処理が動かないようにする
       if (messages.length !== 0) {
         //追加するHTMLの入れ物を作る
@@ -68,7 +74,7 @@ $(function(){
     })
     .fail(function() {
       alert('error');
-    });
+    })
   };
   setInterval(reloadMessages, 7000);
 });
